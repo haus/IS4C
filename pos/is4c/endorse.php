@@ -3,11 +3,11 @@
     <head></head>
     <body bgcolor='#ffffff'>
         <?php
-            include_once("session.php");
-            include_once("printLib.php");
-            include_once("printReceipt.php");
-            include_once("connect.php");
-            include_once("prehkeys.php");
+            require_once("session.php");
+            require_once("printLib.php");
+            require_once("printReceipt.php");
+            require_once("connect.php");
+            require_once("prehkeys.php");
 
             $endorseType = $_SESSION["endorseType"];
 

@@ -21,8 +21,8 @@
 
 *********************************************************************************/
 
-include_once("ccLib.php");
-include_once("lib.php");
+require_once("ccLib.php");
+require_once("lib.php");
 
 function ccEntered($entered) {
 

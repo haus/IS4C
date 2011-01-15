@@ -3,16 +3,16 @@
     <body bgcolor='#ffffff'>
         <?
             if (!function_exists("get_config_auto")) {
-                include_once("/pos/is4c/lib/conf.php");
+                require_once("/pos/is4c/lib/conf.php");
                 apply_configurations();
             }
-            include_once("session.php");
-            include_once("printLib.php");
-            include_once("printReceipt.php");
-            include_once("connect.php");
-            include_once("additem.php");
-            include_once("ccLib.php");
-            include_once("maindisplay.php");
+            require_once("session.php");
+            require_once("printLib.php");
+            require_once("printReceipt.php");
+            require_once("connect.php");
+            require_once("additem.php");
+            require_once("ccLib.php");
+            require_once("maindisplay.php");
 
 
 
@@ -117,4 +117,5 @@
                 sql_close($connection);
             }
         ?>
-    </body></html>
+    </body>
+</html>

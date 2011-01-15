@@ -21,7 +21,7 @@
 
 *********************************************************************************/
 if (!function_exists("get_config_auto")) {
-    include_once("lib/conf.php");
+    require_once("lib/conf.php");
     # apply_configurations();
 }
 

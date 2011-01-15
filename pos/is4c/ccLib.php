@@ -21,7 +21,7 @@
 
 *********************************************************************************/
 
-include_once("connect.php");
+require_once("connect.php");
 
 function local_inx() {
     $inx = $_SESSION["CashierNo"] . ".inx";

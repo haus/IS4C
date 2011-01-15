@@ -21,8 +21,8 @@
 
 *********************************************************************************/
 
-if (!function_exists("ccXML")) include_once("ccLib.php");
-if (!function_exists("boxMsgscreen")) include_once("clientscripts.php");
+if (!function_exists("ccXML")) require_once("ccLib.php");
+if (!function_exists("boxMsgscreen")) require_once("clientscripts.php");
 
 $decision = strtoupper(trim($_POST["input"]));
 

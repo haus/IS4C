@@ -22,7 +22,7 @@
 *********************************************************************************/
 
     if (!function_exists("get_config_auto")) {
-        include_once("lib/conf.php");
+        require_once("lib/conf.php");
     }
 
     if (!function_exists("pDataConnect") || !function_exists("tDataConnect")) {

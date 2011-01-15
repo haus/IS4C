@@ -26,7 +26,7 @@ if (!function_exists("printheaderb")) include("drawscreen.php");
 if (!function_exists("gohome")) include("maindisplay.php");
 if (!function_exists("drawerKick")) include("printLib.php");
 if (!function_exists("receipt")) include("clientscripts.php");
-include_once("prehkeys.php");
+require_once("prehkeys.php");
 
 
 if (isset($_POST["loan"])) {

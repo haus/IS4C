@@ -20,7 +20,7 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 *********************************************************************************/
-if (!function_exists("printheaderb")) include_once ("drawscreen.php");
+if (!function_exists("printheaderb")) require_once ("drawscreen.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
@@ -57,7 +57,7 @@ if (!function_exists("printheaderb")) include_once ("drawscreen.php");
                 </td>
             </tr>
         </table>
-        <? 
+<?php
             errorBeep();
             $_SESSION["scan"] = "noScan";
             printfooter();

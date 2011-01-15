@@ -34,7 +34,7 @@
 
         <?php
             if (!function_exists("endorseType")) {
-                include_once("clientscripts.php");        // apbw 03/24/05 Wedge Printer Swap Patch
+                require_once("clientscripts.php");        // apbw 03/24/05 Wedge Printer Swap Patch
             }
 
             $decision = strtoupper(trim($_POST["input"]));

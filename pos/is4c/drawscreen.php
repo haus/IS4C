@@ -21,7 +21,7 @@
 
 *********************************************************************************/
 
-include_once("lib.php");
+require_once("lib.php");
 
 function printfooter() {
     $_SESSION["runningTotal"] = $_SESSION["amtdue"];

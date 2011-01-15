@@ -24,7 +24,7 @@
 
 
 if (!function_exists("addItem")) include("additem.php");
-if (!function_exists("truncate2")) include_once("lib.php");        // apbw 03/24/05 Wedge Printer Swap Patch
+if (!function_exists("truncate2")) require_once("lib.php");        // apbw 03/24/05 Wedge Printer Swap Patch
 if (!function_exists("lastpage")) include("listitems.php");
 if (!function_exists("blueLine")) include("session.php");
 

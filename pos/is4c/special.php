@@ -22,8 +22,8 @@
 *********************************************************************************/
 
 if (!function_exists("receipt")) include("clientscripts.php");
-include_once("connect.php");
-include_once("end.php");
+require_once("connect.php");
+require_once("end.php");
 
 function suspendorder() {
     testremote();

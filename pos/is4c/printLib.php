@@ -22,7 +22,7 @@
 *********************************************************************************/
 
 if (!function_exists("getChgName")) include("chgName.php");        // added by apbw 2/14/05 SCR
-if (!function_exists("truncate2")) include_once("lib.php");        // 3/24/05 apbw Wedge Printer Swap Patch
+if (!function_exists("truncate2")) require_once("lib.php");        // 3/24/05 apbw Wedge Printer Swap Patch
 
 function build_time($timestamp) {
 

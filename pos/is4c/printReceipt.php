@@ -21,7 +21,7 @@
 
 *********************************************************************************/
 if (!function_exists("setDrawerKick")) include("setDrawerKick.php");  // apbw 03/29/05 Drawer Kick Patch
-if (!function_exists("writeLine")) include_once("printLib.php");    // apbw 03/26/05 Wedge Printer Swap Patch
+if (!function_exists("writeLine")) require_once("printLib.php");    // apbw 03/26/05 Wedge Printer Swap Patch
 
 // ----------------------------------------------------------- 
 // printReceipt.php is the main page for printing receipts.  

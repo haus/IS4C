@@ -24,7 +24,7 @@
  * for now, remove call to db config -jdp
 */
 	if (!function_exists("get_config_auto")) {
-        include_once("/pos/is4c/lib/conf.php");
+        require_once("/pos/is4c/lib/conf.php");
         apply_configurations();
     }
 

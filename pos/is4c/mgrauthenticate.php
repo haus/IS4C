@@ -21,7 +21,7 @@
 
 *********************************************************************************/
 
-include_once("connect.php");
+require_once("connect.php");
 if (!function_exists("returnHome")) include("maindisplay.php");
 if (!function_exists("receipt")) include("clientscripts.php");
 

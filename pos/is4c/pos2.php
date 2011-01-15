@@ -30,7 +30,7 @@ if (!function_exists("tender")) include("prehkeys.php");
 if (!function_exists("voiditem")) include("void.php");
 if (!function_exists("clubCard")) include ("clubCard.php");            // --- apbw 2/15/05 ClubCard ---
 if (!function_exists("ccEntered")) include("ccEntered.php");
-if (!function_exists("drawerKick")) include_once("printLib.php");
+if (!function_exists("drawerKick")) require_once("printLib.php");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">

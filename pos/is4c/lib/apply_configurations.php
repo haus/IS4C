@@ -1,5 +1,5 @@
 <?php
-    include_once("query.php");
+    require_once("query.php");
 
     save_configurations($_POST);
 ?>

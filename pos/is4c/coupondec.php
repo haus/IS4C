@@ -22,9 +22,9 @@
 *********************************************************************************/
  // session_start(); 
 
-if (!function_exists("gohome")) include_once ("maindisplay.php");        // apbw 5/3/05 BlueSkyFix    
-if (!function_exists("pdataconnect")) include_once ("connect.php");    // apbw 5/3/05 BlueSkyFix    
-if (!function_exists("addcoupon")) include_once ("additem.php");        // apbw 5/3/05 BlueSkyFix
+if (!function_exists("gohome")) require_once ("maindisplay.php");        // apbw 5/3/05 BlueSkyFix    
+if (!function_exists("pdataconnect")) require_once ("connect.php");    // apbw 5/3/05 BlueSkyFix    
+if (!function_exists("addcoupon")) require_once ("additem.php");        // apbw 5/3/05 BlueSkyFix
 
 $dept = strtoupper(trim($_POST["dept"]));
 $dept = str_replace(".", "", $dept);

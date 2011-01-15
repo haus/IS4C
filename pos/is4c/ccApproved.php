@@ -40,7 +40,7 @@
                         if(!function_exists("boxMsg")) {
                             include("drawscreen.php");
                         }
-                        include_once("lib.php");
+                        require_once("lib.php");
 
                         $_SESSION["boxMsg"] = "<b>approved</b><p><font size=-1>[Enter] to continue</font>";
 

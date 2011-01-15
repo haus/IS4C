@@ -69,7 +69,7 @@ opyright 2001, 2004 Wedge Community Co-op
             <tr>
                 <td width='640' colspan='2' align='right'>
                     <font size='-2' face='arial'>E X I T</font>
-                        <?
+<?php
                             if ($_SESSION["laneno"] >= 9) {
                                 echo "<a href='#' onclick='javascript:window.top.close(); return false;' ";
                             }

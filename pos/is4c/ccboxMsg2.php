@@ -37,7 +37,7 @@
             </tr>
         </table>
 
-        <?
+<?php
             if(!function_exists("boxMsg")) {
                 include("drawscreen.php");
             }

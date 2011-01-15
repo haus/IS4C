@@ -36,7 +36,7 @@
                 <td align='left' valign='top' width='200'></td>
             </tr>
         </table>
-                    <?
+<?php
                         if(!function_exists("boxMsg")) {
                             include("drawscreen.php");
                         }

@@ -30,7 +30,7 @@
         <table border='0' cellpadding='0' cellspacing='0'>
             <tr>
                 <td width='200'>
-                    <form name='form' method='post' autocomplete='off' action='<?=$_SERVER["PHP_SELF"];?>'>
+                    <form name='form' method='post' autocomplete='off' action='<?php echo $_SERVER["PHP_SELF"]; ?>'>
                     <?php
                         if ($_SESSION["inputMasked"] != 0) {
                             $inputType = "password";

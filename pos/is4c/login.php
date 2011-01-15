@@ -39,6 +39,7 @@
     }
 /*
  * for now, remove call to db config -jdp
+*/
     if (!is_config_set()) {
     ?>
         <script type='text/javascript'>
@@ -48,7 +49,6 @@
     }
  
     apply_configurations();
- */
     initiate_session();
 ?>
 

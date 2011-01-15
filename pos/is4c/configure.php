@@ -52,13 +52,13 @@
                             ?>
                             <fieldset>
 	                        	
-                                <legend><?=$group["group_name"]?></legend>
+                                <legend><?php echo $group["group_name"]?></legend>
                                 <?php
                                     $configs = get_configuration_settings($group["group_id"]);
                                     foreach ($configs as $config) {
                                 ?>
-                                <label for='<?=$config["key"]?>'><?=$config["key"]?>:</label>
-                                <input type='<?=$config["type"]=="flag"?'checkbox':'text'?>' <?=$config["type"]=="flag"&&$config["value"]==1?'checked=\'checked\'':''?> value='<?=$config["type"]=="flag"?1:$config["value"]?>' name='<?=$config["key"]?>' id='<?=$config["key"]?>' /> <?=get_config_auto($config["key"])?> <br />
+                                <label for='<?php echo $config["key"]; ?>'><?php echo $config["key"]; ?>:</label>
+                                <input type='<?php echo $config["type"]=="flag"?'checkbox':'text'; ?>' <?php echo $config["type"]=="flag"&&$config["value"]==1?'checked=\'checked\'':''; ?> value='<?php echo $config["type"]=="flag"?1:$config["value"]; ?>' name='<?php echo $config["key"]; ?>' id='<?php echo $config["key"]; ?>' /> <?php echo get_config_auto($config["key"]); ?> <br />
                                 <?php } ?>
                                     
                             </fieldset>

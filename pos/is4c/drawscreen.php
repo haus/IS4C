@@ -151,8 +151,8 @@ function printfooter() {
 
     echo "<tr><td height='2' colspan='5'></td></tr>";
     echo "<tr><td width='119' height='60' align='left' bgcolor='#EEEEEE'><font face='arial' size='+2' color='#004080'><center><b>" . number_format($dblyousaved, 2) . "</b></center></font></td>";
-    echo "<td width='117' align='center'><font face='arial' color='#808080' size='+1'>" . number_format($strperdiscount, 2) . "</font></td>";
-    echo "<td width='117' align='center'><font face='arial' color='#808080' size='+1'>" . number_format($strmemSpecial, 2) . "</font></td>";
+    echo "<td width='117' align='center'><font face='arial' color='#808080' size='+1'>" . number_format((double) $strperdiscount, 2) . "</font></td>";
+    echo "<td width='117' align='center'><font face='arial' color='#808080' size='+1'>" . number_format((double) $strmemSpecial, 2) . "</font></td>";
     echo "<td width='117' height='60' align='center'><font face='arial' color='#808080' size='+1'>" . number_format($dbldiscounttotal, 2) . "</font></td>";
 
     if ($_SESSION["ttlflag"] == 1 && $_SESSION["End"] != 1) {

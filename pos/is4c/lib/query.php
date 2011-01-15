@@ -121,7 +121,7 @@
         $query =
             'SELECT group_id,
                 group_name
-                FROM `opdata`.`configurationGroups`
+                FROM `' . $_SESSION["pDatabase"] . '`.`configurationGroups`
                 WHERE group_id > 0;';
         $result = sql_query($query, pDataConnect());
         for ($i = 0; $i < sql_num_rows($result); $i++) {
@@ -137,7 +137,7 @@
             'SELECT `key`,
                 value,
                 type
-                FROM `opdata`.`configuration`
+                FROM `' . $_SESSION["pDatabase"] . '`.`configuration`
                 WHERE group_id = ' . $configuration_group;
         $result = sql_query($query, pDataConnect());
         for ($i = 0; $i < sql_num_rows($result); $i++) {
@@ -151,7 +151,7 @@
         $query =
             'SELECT `key`,
                 value
-                FROM `opdata`.`configuration`
+                FROM `' . $_SESSION["pDatabase"] . '`.`configuration`
                 WHERE group_id > 0;';
         $result = sql_query($query, pDataConnect());
         for ($i = 0; $i < sql_num_rows($result); $i++) {
@@ -166,7 +166,7 @@
     function configs_set() {
        	$query =
             'SELECT value
-                FROM `opdata`.`configuration`
+                FROM `' . $_SESSION["pDatabase"] . '`.`configuration`
                 WHERE `key` IN
                 (
                     "OS",
@@ -198,13 +198,13 @@
         // Those that have been checked will be reset back to 1.
         $query =
             'SELECT conf_id
-                FROM `opdata`.`configuration`
+                FROM `' . $_SESSION["pDatabase"] . '`.`configuration`
                 WHERE type = "flag";';
         $result = sql_query($query, pDataConnect());
         for ($i = 0; $i < sql_num_rows($result); $i++) {
             $row = sql_fetch_assoc_array($result);
             $query =
-                'UPDATE `opdata`.`configuration`
+                'UPDATE `' . $_SESSION["pDatabase"] . '`.`configuration`
                     SET value = 0
                     WHERE conf_id = "' . $row["conf_id"]  . '";';
             $execute = sql_query($query, pDataConnect());
@@ -212,7 +212,7 @@
         // Save the configurations to the database.
         foreach($configurations as $key => $value) {
             $query =
-                'UPDATE `opdata`.`configuration`
+                'UPDATE `' . $_SESSION["pDatabase"] . '`.`configuration`
                     SET value = "' . $value . '"
                     WHERE `key` = "' . $key . '";';
             $result = sql_query($query, pDataConnect());

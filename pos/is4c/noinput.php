@@ -47,9 +47,10 @@
                                 . "<img src='graphics/REDDOT.GIF' alt='Red dot' />&nbsp;&nbsp;&nbsp;";
                         }
                     ?>
-                    <font face='arial' size='+1'><b><?=$time;?></b></font>
+                    <font face='arial' size='+1'><b><?php echo $time; ?></b></font>
                 </td>
             </tr>
         </table>
-    </body></html>
+    </body>
+</html>
 

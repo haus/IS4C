@@ -70,7 +70,7 @@
                             <?php
                         }
                     ?>
-                <font face='arial' size='+1'><b><?=$time?></b></font>
+                <font face='arial' size='+1'><b><?php echo $time; ?></b></font>
                 </td>
             </tr>
         </table>
@@ -110,7 +110,7 @@
                         break;
                     case 115:
                         {
-                            <?=($_SESSION["OS"] == "win32")?"window.top.main_frame.document.form1.input.value = 'LOCK'; window.top.main_frame.document.form1.submit();":''?>
+                            <?php echo ($_SESSION["OS"] == "win32")?"window.top.main_frame.document.form1.input.value = 'LOCK'; window.top.main_frame.document.form1.submit();":''; ?>
                         };
                         break;
                     case 117:

@@ -58,7 +58,7 @@ function promptbox($msg) {
                                 <input name='reginput' Type='text' size='20' />
                             </form>
                             <font face='arial' color='black'>
-                                <?=$msg; ?>
+                                <?php echo $msg; ?>
                             </font>
                         </td>
                         <td width='10' bgcolor='white' height='118'></td>

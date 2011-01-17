@@ -61,7 +61,7 @@ $lane = $_GET['lane'];
                                             <input type='password' name='reginput' size='20' onBlur='document.form.reginput.focus();' />
                                             <p>
                                                 <font face='arial' color='white'>
-                                                    user already logged onto till <?=$lane;?>
+                                                    user already logged onto till <?php echo $lane; ?>
                                                 </font>
                                             </p>
                                         </form>
@@ -91,5 +91,6 @@ $lane = $_GET['lane'];
         <form name='hidden'>
             <input Type='hidden' name='alert' value='noScan'>
         </form>
-    </body></html>
+    </body>
+</html>
 
